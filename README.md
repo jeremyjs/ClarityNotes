@@ -1,12 +1,12 @@
 # meteor-boilerplate
 
-A starting point for meteorjs applications, includes Iron Router, Bootstrap 3, Font Awesome, LESS and Coffeescript.
+A starting point for meteorjs applications, includes Iron Router, Bootstrap 3, Font Awesome, SCSS and Coffeescript.
 
 ## What's included
 
 * File Structure
 * <a href="http://coffeescript.org/" target="_blank">Coffeescript</a>
-* <a href="http://lesscss.org/" target="_blank">LESS</a>
+* <a href="http://sass-lang.org/" target="_blank">SCSS</a>
 * <a href="https://github.com/EventedMind/iron-router" target="_blank">Iron Router</a>
 * <a href="http://github.differential.io/accounts-entry" target="_blank">Accounts-Entry</a>
 * <a href="http://getbootstrap.com" target="_blank">Bootstrap 3.1.1</a>
@@ -18,7 +18,7 @@ Make sure you have Meteor and [Meteorite](https://github.com/oortcloud/meteorite
 
 ## File structure
 
-We have a common file structure we use across all of our meteorjs apps. The structure keeps view-dependent files together (`.html`, `.less`, `.coffee`).
+We have a common file structure we use across all of our meteorjs apps. The structure keeps view-dependent files together (`.html`, `.scss`, `.coffee`).
 
 ```
 .meteor
@@ -30,16 +30,16 @@ client
     └── lib
       ├── bootstrap.css
       └── font-awesome.css
-    ├── global.less
-    ├── mixins.less
-    └── variables.less
+    ├── global.scss
+    ├── mixins.scss
+    └── variables.scss
   └── views
     └── dashboard
       ├── dashboard.html
-      └── dashboard.less
+      └── dashboard.scss
     └── home
       ├── home.html
-      ├── home.less
+      ├── home.scss
       └── home.coffee
     ├── footer.html
     ├── header.html
@@ -57,11 +57,11 @@ server
   └── publications.coffee
 ```
 
-## Responsive LESS Variables
+## Responsive SCSS Variables
 
-Includes 4 LESS variables to make responsive design super easy. Each variable (`xs`, `sm`, `md`, `lg`) coincides with [Bootstrap media queries](http://getbootstrap.com/css/#responsive-utilities).
+Includes 4 SCSS variables to make responsive design super easy. Each variable (`xs`, `sm`, `md`, `lg`) coincides with [Bootstrap media queries](http://getbootstrap.com/css/#responsive-utilities).
 
-```SCSS
+```
 
 h1 {
   font-size: 24px;
