@@ -1,0 +1,58 @@
+#!/bin/bash
+
+ACTION=$1
+
+if [[ ACTION -eq "view" ]]
+then
+  NAME=$2
+  DIRNAME=$3
+
+  if [[ $DIRNAME != "" ]]
+  then
+    PATH=client/views/$DIRNAME
+  else
+    PATH=client/views
+  fi
+
+  echo "creating view $NAME"
+
+  if [[ -ne $PATH ]]
+  then
+    echo "creating directory $PATH"
+  fi
+
+  VIEW=$PATH/$NAME.html
+
+  echo "creating view $VIEW"
+  if [[ -e $VIEW ]]
+  then
+    echo "ERROR: view already exists"
+  else
+    `touch $VIEW`
+    echo "<template name=\"$NAME\">" >> $VIEW
+    echo "</template>" >> $VIEW
+  fi
+
+  CTRL=$PATH/$NAME.coffee
+
+  echo "creating controller $CTRL"
+  if [[ -e $CTRL ]]
+  then
+    echo "ERROR: controller already exists"
+  else
+    `touch $CTRL`
+    echo "Template.$NAME.helpers" >> $CTRL
+    echo "" >> $CTRL
+    echo "Template.$NAME.events" >> $CTRL
+  fi
+
+  echo "adding route for $NAME"
+  if [[ `grep "@route '$NAME'" router.coffee` ]]
+  then
+    echo "ERROR: route already exists"
+  else
+    echo "@route '$NAME'" >> router.coffee
+    echo "" >> $CTRL
+  fi
+fi
+

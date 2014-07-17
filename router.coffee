@@ -1,0 +1,1 @@
+@route 'text_editor'
