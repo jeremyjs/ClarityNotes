@@ -47,7 +47,7 @@ then
   fi
 
   echo "adding route for $NAME"
-  if [[ `grep "@route '$NAME'" router.coffee` ]]
+  if [[ `grep "@route '$NAME'" routes.coffee` ]]
   then
     echo "ERROR: route already exists"
   else
