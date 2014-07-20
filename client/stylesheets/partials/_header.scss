@@ -1,0 +1,66 @@
+.titlebar {
+  background: $primary;
+  padding: 0 10px;
+
+  .sidebar-button {
+    position: absolute;
+    float: left;
+    top: 8px;
+
+    img { display: block; }
+  }
+
+  .title {
+    text-align: center;
+    width: 100%;
+
+    h1 {
+      color: white;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+      margin: 6px 0;
+      display: inline-block;
+    }
+  }
+
+  .accounts {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    list-style: none;
+  }
+}
+
+$border-color: #eee;
+$active-color: #CF0000;
+
+.actionbar {
+  display: block;
+  height: 40px;
+  margin: 0;
+}
+
+ul.action-list {
+  list-style: none;
+  margin: 0;
+  -webkit-padding-start: 0;
+  display: block;
+
+  .action {
+    float: left;
+    width: 33.3%;
+    display: block;
+    text-align: center;
+    padding: 14px 0;
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+
+    &.active {
+      color: $active-color;
+      /* border-bottom: none; */
+      border-top: 4px solid $active-color;
+      padding: 12px 0 12px;
+    }
+  }
+}

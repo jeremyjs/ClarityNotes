@@ -6,8 +6,16 @@
   <!--[if lt IE 9]>
     <p class="browser-warning"><strong><i class="icon-exclamation-sign"></i> Warning</strong> - You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to properly view this website.</p>
   <![endif]-->
-
-  {{> yield region="header"}}
-  {{> yield}}
+  {{#if currentUser}}
+    {{> yield region="header"}}
+  {{/if}}
+  <div class="page-wrapper">
+    {{#if sidebar}}
+      {{> yield region="sidebar"}}
+    {{/if}}
+    <div class="container-fluid">
+      {{> yield}}
+    </div>
+  </div>
   {{> yield region="footer"}}
 </template>

@@ -1,0 +1,21 @@
+<template name="accountSettings">
+  <h2>Account Settings</h2>
+  <div class="errors">
+    {{errors}}
+  </div>
+    <div id="email-wrapper">
+      <i class="fa fa-user"></i>
+      <input id="email" type="email" placeholder="Email">
+    </div>
+    <div id="current-password-wrapper">
+      <i class="fa fa-lock"></i>
+      <input id="current-password" type="password" placeholder="Current Password">
+    </div>
+    <div id="new-password-wrapper">
+      <i class="fa fa-lock"></i>
+      <input id="new-password" type="password" placeholder="New Password">
+    </div>
+    <div class="save-button save-button-form-submit">
+      <button id="save-button" class="btn-primary">Save</button>
+    </div>
+</template>

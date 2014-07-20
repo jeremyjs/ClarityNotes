@@ -28,7 +28,7 @@ then
   then
     echo "ERROR: view already exists"
   else
-    `touch $VIEW`
+    touch $VIEW
     echo "<template name=\"$NAME\">" >> $VIEW
     echo "</template>" >> $VIEW
   fi
@@ -40,7 +40,7 @@ then
   then
     echo "ERROR: controller already exists"
   else
-    `touch $CTRL`
+    touch $CTRL
     echo "Template.$NAME.helpers" >> $CTRL
     echo "" >> $CTRL
     echo "Template.$NAME.events" >> $CTRL
@@ -51,7 +51,7 @@ then
   then
     echo "ERROR: route already exists"
   else
-    echo "@route '$NAME'" >> router.coffee
+    echo "@route '$NAME'" >> routes.coffee
     echo "" >> $CTRL
   fi
 fi

@@ -1,0 +1,19 @@
+<template name="notes">
+  {{#each notes}}
+    {{> note}}
+  {{/each}}
+</template>
+
+<template name="note">
+  <h2>{{title}}</h2>
+  <div id="{{_id}}" rows="10" cols="80">
+    {{#each lines}}
+      {{> line}}
+    {{/each}}
+  </div>
+  <p>debug: {{self}}</p>
+</template>
+
+<template name="line">
+  <span id="line-{{_id}}" class="note-text" contenteditable>{{text}}</span>
+</template>
