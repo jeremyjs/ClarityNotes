@@ -6,7 +6,6 @@
 standard-app-packages
 autopublish
 insecure
-iron-router
 coffeescript
 less
 accounts-ui

@@ -8,7 +8,7 @@ Package._transitional_registerBuildPlugin({
   sources: [
     'plugin/compile-sass.js'
   ],
-  npmDependencies: {"node-sass": "0.8.6"}
+  npmDependencies: {"node-sass": "0.9.3"}
 });
 
 Package.on_test(function (api) {
@@ -20,7 +20,6 @@ Package.on_test(function (api) {
     'test/empty-sass.scss',
     'test/extend.scss',
     'test/operators.scss',
-    'test/sass.sass',
     'test/sass_tests.html',
     'test/tests.js'
   ], ['client']);
