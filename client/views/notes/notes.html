@@ -1,12 +1,15 @@
 <template name="notes">
+<button class="new-note btn btn-default">New note</button>
+<ul>
   {{#each notes}}
-    {{> note}}
+  <li><a href="{{pathFor 'note' id=this._id}}">{{this.title}}</a></li>
   {{/each}}
+</ul>
 </template>
 
 <template name="note">
-  <h2>{{title}}</h2>
-  <div id="{{_id}}" rows="10" cols="80">
+  <h2 class="note-title" contenteditable>{{title}}</h2>
+  <div id="note-{{_id}}" class="note">
     {{#each lines}}
       {{> line}}
     {{/each}}
@@ -15,5 +18,6 @@
 </template>
 
 <template name="line">
-  <span id="line-{{_id}}" class="note-text" contenteditable>{{text}}</span>
+<span class="parent"><p id="line-{{_id}}" class="line" contenteditable>{{{text}}}</p></span>
 </template>
+

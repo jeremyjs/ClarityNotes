@@ -1,0 +1,28 @@
+<template name="editor">
+  <style scoped>
+    #editor {
+      width: 100%;
+      min-height: 200px;
+    }
+  </style>
+  <ul class="actions">
+    <li class="action btn btn-default">font</li>
+    <li class="action btn btn-default">font-size</li>
+    <li class="action btn btn-default">color</li>
+    <li class="action btn btn-default">bold</li>
+    <li class="action btn btn-default">italic</li>
+    <li class="action btn btn-default">underline</li>
+    <li class="action btn btn-default">strikethrough</li>
+    <li class="action btn btn-default">subscript</li>
+    <li class="action btn btn-default">superscript</li>
+    <li class="action btn btn-default">highlight</li>
+    <li class="action btn btn-default">link</li>
+    <li class="action btn btn-default">justify</li>
+    <li class="action btn btn-default">spacing</li>
+    <li class="action btn btn-default">lists</li>
+    <li class="action btn btn-default">remove format</li>
+    <li class="action btn btn-default">case</li>
+    <li class="action btn btn-default">quote</li>
+  </ul>
+  {{> sharejsText docid=docid id="editor"}}
+</template>

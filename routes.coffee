@@ -36,6 +36,7 @@ Router.map ->
       line = Lines.insert
         noteId: id
         text: ''
+        empty: true
         note: Notes.findOne(this.noteId)
       Notes.findOne(id)
 
