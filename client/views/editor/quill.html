@@ -1,0 +1,22 @@
+<template name="quill">
+  <!-- Create the toolbar container -->
+  <div id="ql-toolbar">
+    <button class="ql-bold">Bold</button>
+    <button class="ql-italic">Italic</button>
+  </div>
+
+  <!-- Create the editor container -->
+  <div id="ql-editor">
+    <p>Hello World!</p>
+    <p>Some initial <b>bold</b> text</p>
+    <p><br></p>
+  </div>
+
+  <!-- Include the Quill library -->
+
+  <!-- Initialize Quill editor -->
+  <script>
+    var editor = new Quill('#ql-editor');
+    editor.addModule('toolbar', { container: '#ql-toolbar' });
+  </script>
+</template>
