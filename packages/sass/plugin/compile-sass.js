@@ -16,11 +16,9 @@ function compile(compileStep) {
   var css;
   try {
     css = sass.renderSync({
-      //data: source,
-      file: compileStep._fullInputPath,
+      data: source,
       outputStyle: 'compressed',
       includePaths: [ path.dirname(compileStep._fullInputPath) ],
-      sourceComments: 'none'
     });
   } catch (e) {
     var message = e.message ? e.message : e.toString();
@@ -40,3 +38,4 @@ function compile(compileStep) {
 };
 
 Plugin.registerSourceHandler("scss", compile);
+Plugin.registerSourceHandler("sass", compile);
