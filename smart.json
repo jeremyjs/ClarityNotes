@@ -3,6 +3,10 @@
     "iron-router": {},
     "bootstrap3-sass": {},
     "fontawesome4": {},
-    "sass": {}
+    "sass": {},
+    "accounts-entry": {},
+    "sharejs": {},
+    "handlebars-server": {},
+    "minimongoid": {}
   }
 }
