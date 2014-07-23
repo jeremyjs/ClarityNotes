@@ -25,8 +25,10 @@ Router.map ->
 
   @route 'dashboard'
 
+  # index
   @route 'notes'
 
+  # new
   @route 'newNote',
     path: 'notes/new'
     template: 'note'
@@ -40,6 +42,7 @@ Router.map ->
         note: Notes.findOne(this.noteId)
       Notes.findOne(id)
 
+  # show
   @route 'note',
     path: 'notes/:id'
     template: 'note'
