@@ -1,5 +1,5 @@
 Template.profile.helpers
   person: ->
-#    user.name
+    user.name
 
 Template.profile.events
