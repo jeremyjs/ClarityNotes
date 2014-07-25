@@ -9,7 +9,9 @@
       "accounts-entry": {},
       "sharejs": {},
       "handlebars-server": {},
-      "minimongoid": {}
+      "minimongoid": {},
+      "rangy": {},
+      "rangyinputs": {}
     },
     "packages": {
       "iron-router": {
@@ -51,6 +53,16 @@
         "git": "https://github.com/Exygy/minimongoid.git",
         "tag": "v0.8.8",
         "commit": "cf8d0bec44934d617544965977f270f2a8cdca02"
+      },
+      "rangy": {
+        "git": "https://github.com/arunhedcet/rangy.git",
+        "tag": "v0.0.1",
+        "commit": "f4c5bdc2e4161a3b5de823230e952e52277f6783"
+      },
+      "rangyinputs": {
+        "git": "https://github.com/Multiply/meteor-rangyinputs.git",
+        "tag": "v0.0.1",
+        "commit": "f346674d05432ed42633bc100d261246dee9b655"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

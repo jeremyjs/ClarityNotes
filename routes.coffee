@@ -72,3 +72,5 @@ Router.map ->
   @route 'testEditor',
     path: '/test/editor'
 
+  @route 'googleRealtime',
+    path: '/test/google'

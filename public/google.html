@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Google Realtime</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+
+  <script type="text/javascript" src="https://apis.google.com/js/api.js"></script>
+  <script type="text/javascript" src="realtime-client-utils.js"></script>
+</head>
+
+<body onLoad='startRealtime()'>
+
+  <h1>Google Drive Realtime API</h1>
+
+  <button id="authorizeButton" disabled>Authorize with Google Account</button>
+
+  <p>These text areas are on the same page. You can also <a target="_blank" href="#">open them on separate users'
+  browsers</a> and they will remain synchronized.</p>
+
+  <!-- Text areas that will be used as our collaborative controls. -->
+  <textarea id="editor1" rows="15" cols="50" disabled="true"></textarea>
+  <br />
+  <div id="editor1-html">test</div>
+
+  <!-- Undo and redo buttons. -->
+  <button id="undoButton" disabled>Undo</button>
+  <button id="redoButton" disabled>Redo</button>
+
+  <script src="realtime-init.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $('#editor1-html').keyup(function() {
+      this.html($('#editor1').value);
+    }
+  </script>
+</body>
+</html>

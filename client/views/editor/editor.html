@@ -4,25 +4,37 @@
       width: 100%;
       min-height: 200px;
     }
+    .underline { text-decoration: underline; }
+    .strikethrough { text-decoration: line-through; }
+    .superscript { text-decoration: underline; }
+    .highlight { background-color: yellow; }
+    .justify-left { text-justify: left; }
+    .justify-center { text-justify: center; }
+    .justify-right { text-justify: right; }
+    .spacing-single { line-height: 12px; }
+    .spacing-single-half { line-height: 18px; }
+    .spacing-double { line-height: 24px; }
+    .quote { text-decoration: italic; }
   </style>
   <ul class="actions">
-    <li class="action btn btn-default">font</li>
-    <li class="action btn btn-default">font-size</li>
-    <li class="action btn btn-default">color</li>
-    <li class="action btn btn-default">bold</li>
-    <li class="action btn btn-default">italic</li>
-    <li class="action btn btn-default">underline</li>
-    <li class="action btn btn-default">strikethrough</li>
-    <li class="action btn btn-default">subscript</li>
-    <li class="action btn btn-default">superscript</li>
-    <li class="action btn btn-default">highlight</li>
-    <li class="action btn btn-default">link</li>
-    <li class="action btn btn-default">justify</li>
-    <li class="action btn btn-default">spacing</li>
-    <li class="action btn btn-default">lists</li>
-    <li class="action btn btn-default">remove format</li>
-    <li class="action btn btn-default">case</li>
-    <li class="action btn btn-default">quote</li>
+    <li class="action action-font btn btn-default">font</li>
+    <li class="action action-font-size btn btn-default">font-size</li>
+    <li class="action action-color btn btn-default">color</li>
+    <li class="action action-bold btn btn-default">bold</li>
+    <li class="action action-italic btn btn-default">italic</li>
+    <li class="action action-underline btn btn-default">underline</li>
+    <li class="action action-strikethrough btn btn-default">strikethrough</li>
+    <li class="action action-subscript btn btn-default">subscript</li>
+    <li class="action action-superscript btn btn-default">superscript</li>
+    <li class="action action-highlight btn btn-default">highlight</li>
+    <li class="action action-link btn btn-default">link</li>
+    <li class="action action-justify btn btn-default">justify</li>
+    <li class="action action-spacing btn btn-default">spacing</li>
+    <li class="action action-ul btn btn-default">ul</li>
+    <li class="action action-ol btn btn-default">ol</li>
+    <li class="action action-remove btn btn-default">remove format</li>
+    <li class="action action-case btn btn-default">case</li>
+    <li class="action action-quote btn btn-default">quote</li>
   </ul>
   {{> sharejsText docid=docid id="editor"}}
 </template>
