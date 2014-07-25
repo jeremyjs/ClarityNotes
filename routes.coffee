@@ -3,8 +3,8 @@ isLoggedIn = (action) ->
     this.render 'login'
     action()
 
-# Router.onBeforeAction isLoggedIn,
-#   except: ['login', 'signup', 'testEditor']
+Router.onBeforeAction isLoggedIn,
+  except: ['login', 'signup']
 
 Router.map ->
   @route 'root',
