@@ -1,9 +1,56 @@
 /* ===============================
-    LESS VARIABLES
+    VARIABLES
    =============================== */
 
-// RESPONSIVE
-// $xs: ~"(max-width: 767px)";
-// $sm: ~"(min-width: 768px)";
-// $md: ~"(min-width: 992px)";
-// $lg: ~"(min-width: 1200px)";
+/* Fonts */
+@import 'webfonts';
+
+$AvenirNext: 'Avenir Next', sans-serif;
+
+.AvenirNextMedium {
+  font-family: $AvenirNext;
+  font-weight: 500;
+  font-style: normal;
+  background: 0;
+}
+
+.AvenirNextDemi {
+  font-family: $AvenirNext;
+  font-weight: 600;
+  font-style: normal;
+  background: 0;
+}
+
+.AvenirNextBold {
+  font-family: $AvenirNext;
+  font-weight: 700;
+  font-style: normal;
+  background:0;
+}
+
+/* Responsive */
+$screen-xs-max: 767px;
+
+$screen-sm-min: 768px;
+$screen-sm-max: 991px;
+
+$screen-md-min: 992px;
+$screen-md-max: 1199px;
+
+$screen-lg-min: 1200px;
+
+/* Colours */
+$blue1: #2eb5e5;
+$blue2: #2980b9;
+$blue3: #2574a9;
+
+$red1: #e74c3c;
+
+$white: white;
+$grey1: #f6f6f6;
+$grey2: #f0f0f0;
+$grey3: #706f6f;
+$black: black;
+
+$googleplus: #dd4b39;
+
