@@ -11,7 +11,8 @@
       "handlebars-server": {},
       "minimongoid": {},
       "rangy": {},
-      "rangyinputs": {}
+      "rangyinputs": {},
+      "zones": {}
     },
     "packages": {
       "iron-router": {
@@ -64,6 +65,11 @@
         "tag": "v0.0.1",
         "commit": "f346674d05432ed42633bc100d261246dee9b655"
       },
+      "zones": {
+        "git": "https://github.com/meteorhacks/meteor-zones.git",
+        "tag": "v0.4.8",
+        "commit": "86fd8bc69eb55aa02786940b9d062061db857521"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
@@ -88,6 +94,11 @@
         "git": "https://github.com/TimHeckel/meteor-underscore-string.git",
         "tag": "v2.3.3",
         "commit": "4a5d70eee48fbd90a6e6fc78747250d704a0b3bb"
+      },
+      "inject-initial": {
+        "git": "https://github.com/gadicc/meteor-inject-initial.git",
+        "tag": "v0.0.10",
+        "commit": "19d24aea9cdc16963291dfd85a12d6eadf7b98aa"
       }
     }
   }

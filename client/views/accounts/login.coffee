@@ -6,21 +6,22 @@ accountError = (params) ->
     console.log "success"
     Router.go pathFor 'newNote'
 
+@loginUser = (email, password) ->
+  console.log "validating user '#{email}' with password '#{password}'..."
+  Meteor.loginWithPassword email, password, accountError
+@createUser = (email, password) ->
+  console.log "creating user '#{email}' with password '#{password}'..."
+  Accounts.createUser { email: email, password: password }, accountError
+
 createOrLogin = (action = "login") ->
   event.preventDefault()
   email = $('#login-email').val()
   password = $('#login-password').val()
 
   if action == "login"
-    console.log "validating user '#{email}' with password '#{password}'..."
-    # Session.setDefault('name', email.slice(email.indexof('@')))
-    Meteor.loginWithPassword email, password, accountError
-  else if action == "create"
-    console.log "creating user '#{email}' with password '#{password}'..."
-    Accounts.createUser { email: email, password: password }, accountError
-
+    loginUser(email, password)
   else
-    console.log "createOrLogin: invalid action parameter"
+    createUser(email, password)
 
 Template.login.helpers
   errors: ->

@@ -9,6 +9,7 @@
     "handlebars-server": {},
     "minimongoid": {},
     "rangy": {},
-    "rangyinputs": {}
+    "rangyinputs": {},
+    "zones": {}
   }
 }
