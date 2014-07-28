@@ -7,14 +7,31 @@
     GLOBAL
    =============================== */
 
-textarea, input {
-  outline: none;
-}
-
 * {
   font-family: 'Avenir Next';
   font-weight: 400;
   font-style: normal; 
+}
+
+html body .page-wrapper .container-fluid {
+  height: 100vh;
+}
+
+.text-vcenter {
+  display:table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 100vh;
+}
+
+textarea, input {
+  outline: none;
+}
+
+.errors {
+  color: $red1; 
+  font-size: 2em;
+  font-weight: 600;
 }
 
 /* Login */
@@ -25,23 +42,22 @@ textarea, input {
   border-bottom:$blue1 2px solid;
   border-top: 0;
   width: 60%;
-  color: $grey3;
+  color: $black;
 }
 
 .login-input-container {
   border: 0;
+}
 
+.title-image {
+  margin-bottom: 5vh;
 }
 
 .input-placeholder-form {
   padding-left:0.5rem;
   padding-bottom: 1rem;
+  color: $black;
 }
-
-::-webkit-input-placeholder { @extend .input-placeholder-form; }
-::-moz-placeholder { @extend .input-placeholder-form; }
-:-ms-input-placeholder { @extend .input-placeholder-form; }
-input:-moz-placeholder { @extend .input-placeholder-form; }
 
 .login-btn {
   background: $blue1;
@@ -72,10 +88,6 @@ input:-moz-placeholder { @extend .input-placeholder-form; }
   
   /* Login */
   
-  .title-image {
-    margin-top:25rem;
-  }
-  
   .login-input-box {
     font-size: 2rem;
     line-height: 3rem;
@@ -83,11 +95,6 @@ input:-moz-placeholder { @extend .input-placeholder-form; }
   
   .login-input-container {
     margin-top:3rem;
-  }
-  
-  .input-placeholder-form {
-    padding-left:0.5rem;
-    padding-bottom: 1rem;
   }
 
   ::-webkit-input-placeholder { @extend .input-placeholder-form }
@@ -116,5 +123,26 @@ input:-moz-placeholder { @extend .input-placeholder-form; }
   
   /* Login */
   
+  .login-input-box {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  
+  .login-input-container {
+    margin-top:3rem;
+  }
+
+  ::-webkit-input-placeholder { @extend .input-placeholder-form }
+  ::-moz-placeholder { @extend .input-placeholder-form }
+  :-ms-input-placeholder { @extend .input-placeholder-form }
+  input:-moz-placeholder { @extend .input-placeholder-form }
+  
+  .login-links-top {
+    font-size: 1.5rem;
+  }
+  
+  .login-links-bottom {
+    font-size: 1.7rem;
+  }
   
 }
