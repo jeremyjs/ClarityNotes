@@ -1,9 +1,148 @@
 @import 'packages/bootstrap3-sass/bootstrap';
 
-body {
-  font-family: url('/fonts/Avenir\ Next\ LT\ Pro'), Helvetica, sans-serif;
+@import 'variables';
+@import 'mixins';
+
+/* ===============================
+    GLOBAL
+   =============================== */
+
+* {
+  font-family: 'Avenir Next';
+  font-weight: 400;
+  font-style: normal; 
 }
 
-h1, h2, h3 {
-  margin-top: 10px 0;
+html body .page-wrapper .container-fluid {
+  height: 100vh;
+}
+
+.text-vcenter {
+  display:table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 100vh;
+}
+
+textarea, input {
+  outline: none;
+}
+
+.errors {
+  color: $red1; 
+  font-size: 2em;
+  font-weight: 600;
+}
+
+/* Login */
+
+.login-input-box {
+  display:block;
+  border: 0;
+  border-bottom:$blue1 2px solid;
+  border-top: 0;
+  width: 60%;
+  color: $black;
+}
+
+.login-input-container {
+  border: 0;
+}
+
+.title-image {
+  margin-bottom: 5vh;
+}
+
+.input-placeholder-form {
+  padding-left:0.5rem;
+  padding-bottom: 1rem;
+  color: $black;
+}
+
+.login-btn {
+  background: $blue1;
+  border: 0;
+  width: 60%;
+  font-size: 2rem;
+  line-height: 5rem;
+  margin-top: 2.5rem;
+}
+
+.googleplus {
+  background: $googleplus;
+}
+
+.login-links {
+  color: $black;
+  margin-top: 1.7rem;
+}
+
+/* ===============================
+    768px - 992px
+   =============================== */
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  
+  * {
+    background: $white;
+  }
+  
+  /* Login */
+  
+  .login-input-box {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  
+  .login-input-container {
+    margin-top:3rem;
+  }
+
+  ::-webkit-input-placeholder { @extend .input-placeholder-form }
+  ::-moz-placeholder { @extend .input-placeholder-form }
+  :-ms-input-placeholder { @extend .input-placeholder-form }
+  input:-moz-placeholder { @extend .input-placeholder-form }
+  
+  .login-links-top {
+    font-size: 1.5rem;
+  }
+  
+  .login-links-bottom {
+    font-size: 1.7rem;
+  }
+  
+}
+
+/* ===============================
+    992px - 1200px
+   =============================== */
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  
+  * {
+    background: $white;
+  }
+  
+  /* Login */
+  
+  .login-input-box {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  
+  .login-input-container {
+    margin-top:3rem;
+  }
+
+  ::-webkit-input-placeholder { @extend .input-placeholder-form }
+  ::-moz-placeholder { @extend .input-placeholder-form }
+  :-ms-input-placeholder { @extend .input-placeholder-form }
+  input:-moz-placeholder { @extend .input-placeholder-form }
+  
+  .login-links-top {
+    font-size: 1.5rem;
+  }
+  
+  .login-links-bottom {
+    font-size: 1.7rem;
+  }
+  
 }

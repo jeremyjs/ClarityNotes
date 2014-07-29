@@ -30,6 +30,9 @@ Template.login.helpers
 Template.login.events
   'click #login-button': ->
     createOrLogin "login"
+    
+  'click #login-button-google': ->
+    createOrLogin "create" 
 
   'click #signup-button': ->
     createOrLogin "create"

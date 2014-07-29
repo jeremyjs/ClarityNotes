@@ -1,9 +1,176 @@
 /* ===============================
-    LESS VARIABLES
+    VARIABLES
    =============================== */
 
-// RESPONSIVE
-// $xs: ~"(max-width: 767px)";
-// $sm: ~"(min-width: 768px)";
-// $md: ~"(min-width: 992px)";
-// $lg: ~"(min-width: 1200px)";
+/* Fonts */
+@import 'webfonts';
+
+$AvenirNext: 'Avenir Next', sans-serif;
+$Arial: 'Arial', sans-serif;
+$ComicSans: 'ComicSans', sans-serif;
+$CourierNew: 'CourierNew', sans-serif;
+$Helvetica: 'Helvetica', sans-serif;
+$HelveticaNeue: 'HelveticaNeue', sans-serif;
+$LucidaConsole: 'LucidaConsole', monospace;
+$TimesNewRoman: 'TimesNewRoman', serif;
+$TrebuchetMS: 'TrebuchetMS', sans-serif;
+$Verdana: 'Verdana', sans-serif;
+
+.font-normal {
+  font-style: normal;
+  background: 0;
+}
+.font-italic {
+  font-style: italic;
+  background: 0;
+}
+.font-bold {
+  font-weight: bold;
+  background: 0;
+}
+
+/* Avenir Next */ 
+.AvenirNext-Regular {
+  font-family: $AvenirNext;
+  font-weight: 400;
+  @extend .font-normal;
+}
+.AvenirNext-Italic {
+  @extend .AvenirNext-Regular;
+  @extend .font-italic;
+}
+.AvenirNext-Medium {
+  @extend .AvenirNext-Regular;
+  font-weight: 500;
+  @extend .font-normal;
+}
+.AvenirNext-MediumItalic {
+  @extend .AvenirNext-Medium;
+  @extend .font-italic;
+}
+.AvenirNext-Demi {
+  @extend .AvenirNext-Regular;
+  font-weight: 600;
+  @extend .font-normal;
+}
+.AvenirNext-DemiItalic {
+  @extend .AvenirNext-Demi;
+  @extend .font-italic;
+}
+.AvenirNext-Bold {
+  @extend .AvenirNext-Regular;
+  font-weight: 700;
+  @extend .font-normal;
+}
+.AvenirNext-BoldItalic {
+  @extend .AvenirNext-Bold;
+  @extend .font-italic;
+} 
+/* Arial */ 
+.Arial-Regular {
+  font-family: $Arial;
+  font-weight: 400;
+  @extend .font-normal;
+}
+.Arial-Bold {
+  @extend .Arial-Regular;
+  @extend .font-bold;
+}
+.Arial-Italic {
+  @extend .Arial-Regular;
+  @extend .font-italic;
+}
+.Arial-BoldItalic {
+  @extend .Arial-Regular;
+  @extend .font-bold;
+  @extend .font-italic;
+} 
+/* Comic Sans */ 
+.ComicSans-Regular {
+  font-family: $ComicSans;
+  font-weight: 400;
+  @extend .font-normal;
+}
+.ComicSans-Bold {
+  @extend .ComicSans-Regular;
+  @extend .font-bold;
+} 
+/* Courier New */ 
+.CourierNew-Regular {
+  font-family: $CourierNew;
+  font-weight: 400;
+  @extend .font-normal;
+}
+.CourierNew-Bold {
+  @extend .CourierNew-Regular;
+  @extend .font-bold;
+} 
+/* Helvetica */
+.Helvetica-Regular {
+  font-family: $Helvetica, sans-serif;
+  font-weight: 400;
+  @extend .font-normal;
+}
+.Helvetica-Bold {
+  @extend .Helvetica-Regular;
+  @extend .font-bold;
+}
+.Helvetica-Italic {
+  @extend .Helvetica-Regular;
+  @extend .font-italic;
+}
+.Helvetica-BoldItalic {
+  @extend .Helvetica-Bold;
+  @extend .font-italic;
+}
+/* Helvetica Neue */ 
+.HelveticaNeue-Regular {
+  font-family: $HelveticaNeue;
+  font-weight: 400;
+  @extend .font-normal;
+}
+.HelveticaNeue-Bold {
+  @extend .HelveticaNeue-Regular;
+  @extend .font-bold;
+}
+.HelveticaNeue-Italic {
+  @extend .HelveticaNeue-Regular;
+  @extend .font-italic;
+}
+.HelveticaNeue-BoldItalic {
+  @extend .HelveticaNeue-Bold;
+  @extend .font-italic;
+} 
+/* Lucida Console */ 
+
+/* Times New Roman */ 
+
+
+
+
+/* Responsive */
+$screen-xs-max: 767px;
+
+$screen-sm-min: 768px;
+$screen-sm-max: 991px;
+
+$screen-md-min: 992px;
+$screen-md-max: 1199px;
+
+$screen-lg-min: 1200px;
+
+/* Colours */
+$blue1: #2eb5e5;
+$blue2: #2980b9;
+$blue3: #2574a9;
+
+$red1: #e74c3c;
+$pink1: #FF3366;
+
+$white: white;
+$grey1: #f6f6f6;
+$grey2: #f0f0f0;
+$grey3: #706f6f;
+$black: black;
+
+$googleplus: #dd4b39;
